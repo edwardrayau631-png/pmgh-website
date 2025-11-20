@@ -11,8 +11,11 @@
 <header class="site-header">
   <div class="container header-inner">
     <a href="index.html" class="brand">
-      <span class="brand-title">Port Moresby General Hospital</span>
-      <span class="brand-subtitle">PMGH</span>
+      <img src="pmgh-logo.png" alt="Port Moresby General Hospital logo" class="brand-logo">
+      <span class="brand-text">
+        <span class="brand-title">Port Moresby General Hospital</span>
+        <span class="brand-subtitle">PMGH • Better Health</span>
+      </span>
     </a>
 
     <button class="nav-toggle" aria-label="Toggle navigation">
@@ -36,21 +39,20 @@
   <section class="page-hero">
     <div class="container">
       <h1>Contact & visiting information</h1>
-      <p>Reach us or plan your visit to PMGH.</p>
+      <p>How to reach Port Moresby General Hospital and plan your visit.</p>
     </div>
   </section>
 
   <nav class="breadcrumbs">
     <div class="container">
-      <a href="index.html">Home</a> › <span>Contact</span>
+      <a href="index.html">Home</a> › <span>Contact & visiting information</span>
     </div>
   </nav>
 
   <section class="section">
     <div class="container page-layout">
-
       <aside class="side-nav">
-        <h3>Contact</h3>
+        <h3>Contact & visit</h3>
         <ul>
           <li><a href="contact.html" class="active">Contact information</a></li>
           <li><a href="services.html">Healthcare services</a></li>
@@ -58,34 +60,30 @@
       </aside>
 
       <article class="page-content">
-
         <div class="contact-layout">
-
           <div class="contact-cards">
-
-            <article class="card">
+            <article class="card contact-card">
               <h3>Main switchboard</h3>
               <p class="contact-detail"><strong>+675 324 8200</strong></p>
-              <p>For general enquiries and information.</p>
+              <p>For general enquiries, ward connections and appointment information.</p>
             </article>
 
-            <article class="card">
+            <article class="card contact-card">
               <h3>Family Support Centre</h3>
               <p class="contact-detail"><strong>+675 324 8246</strong></p>
-              <p>Provides medical and psychosocial support.</p>
+              <p>Provides medical, counselling and social support for survivors of violence.</p>
             </article>
 
-            <article class="card">
-              <h3>Hospital address</h3>
+            <article class="card contact-card">
+              <h3>Location</h3>
               <p>Korobosea, Port Moresby, NCD<br>Papua New Guinea</p>
-              <p><em>Check latest visiting hours before arriving.</em></p>
+              <p><em>Visitor access and hours may change. Please phone ahead for the latest information.</em></p>
             </article>
-
           </div>
 
           <div class="contact-form-wrapper">
             <h2>Send us a message</h2>
-            <p>This form is for general enquiries only.</p>
+            <p>This form is for general, non-urgent enquiries only.</p>
 
             <form class="contact-form" onsubmit="return false;">
               <label>
@@ -98,18 +96,20 @@
               </label>
               <label>
                 Message
-                <textarea rows="5" placeholder="Type your message..."></textarea>
+                <textarea rows="5" placeholder="How can we help?"></textarea>
               </label>
               <button type="submit" class="btn primary">Submit (demo only)</button>
             </form>
+
+            <p class="contact-warning">
+              <strong>Important:</strong> Do not use this form for emergencies. For urgent or life-threatening
+              situations, go directly to the Emergency Department or call emergency services.
+            </p>
           </div>
-
         </div>
-
       </article>
     </div>
   </section>
-
 </main>
 
 <footer class="site-footer">
@@ -121,9 +121,7 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <div class="container">
-      <p>© <span id="year"></span> Port Moresby General Hospital.</p>
-    </div>
+    <div class="container"><p>© <span id="year"></span> Port Moresby General Hospital.</p></div>
   </div>
 </footer>
 
