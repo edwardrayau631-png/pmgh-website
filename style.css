@@ -730,3 +730,70 @@ img {
     grid-template-columns: 1fr;
   }
 }
+
+/* =====================================================
+   CAREERS EXTRAS
+   ===================================================== */
+
+/* Working at PMGH photo banner */
+.careers-photo-banner {
+  position: relative;
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-bottom: 1.6rem;
+  box-shadow: var(--shadow-soft);
+}
+
+.careers-photo-banner img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.careers-photo-caption {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 0.9rem 1.1rem;
+  background: linear-gradient(to top, rgba(0, 36, 72, 0.9), rgba(0, 36, 72, 0.15));
+  color: #ffffff;
+}
+
+.careers-photo-caption h2 {
+  margin: 0 0 0.25rem;
+  font-size: 1.1rem;
+}
+
+.careers-photo-caption p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Job details meta row */
+.job-details-meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.1rem;
+  margin-bottom: 1.6rem;
+  border-radius: var(--radius-sm);
+  background: #f3f5f9;
+  border: 1px solid #dde2ec;
+  font-size: 0.92rem;
+}
+
+/* Careers job cards spacing */
+.careers-jobs-grid .card h3 {
+  margin-top: 0;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .careers-photo-banner img {
+    height: 190px;
+  }
+
+  .job-details-meta {
+    flex-direction: column;
+  }
+}
