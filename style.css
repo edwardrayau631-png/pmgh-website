@@ -265,6 +265,7 @@ img {
   background: #e9f4fb;
   border-top: 1px solid #d3e3f5;
   border-bottom: 1px solid #d3e3f5;
+  padding: 1.7rem 0;
 }
 
 .home-tiles-inner {
@@ -379,7 +380,7 @@ img {
 }
 
 /* =====================================================
-   INNER PAGES (unchanged structure)
+   INNER PAGES (shared styles)
    ===================================================== */
 
 .card {
@@ -518,7 +519,7 @@ img {
   margin-bottom: 1.5rem;
 }
 
-/* -------- NEWS GENERIC ----------------------------- */
+/* -------- NEWS GENERIC (news.html) ----------------- */
 
 .news-list {
   display: grid;
@@ -714,7 +715,7 @@ img {
 
 @media (max-width: 768px) {
   .main-nav ul {
-    display: none; /* still simple mobile nav */
+    display: none; /* simple mobile nav for now */
   }
 
   .site-header {
