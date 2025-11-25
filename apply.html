@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apply for a role – Port Moresby General Hospital</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="brand">
+      <img src="pmgh-logo.png" alt="Port Moresby General Hospital logo" class="brand-logo">
+      <span class="brand-text">
+        <span class="brand-title">Port Moresby General Hospital</span>
+        <span class="brand-subtitle">PMGH • Better Health</span>
+      </span>
+    </a>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="departments.html">Departments</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="careers.html" class="active">Careers</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <h1>Apply for a role at PMGH</h1>
+    <p>Submit your details for advertised positions at Port Moresby General Hospital.</p>
+  </div>
+</section>
+
+<nav class="breadcrumbs">
+  <div class="container">
+    <a href="index.html">Home</a> ›
+    <a href="careers.html">Careers</a> ›
+    <span>Apply online</span>
+  </div>
+</nav>
+
+<main>
+  <section class="section">
+    <div class="container contact-layout">
+
+      <div>
+        <div class="careers-photo-banner">
+          <img src="pmgh-departments.jpg" alt="Staff at Port Moresby General Hospital">
+          <div class="careers-photo-caption">
+            <h2>Join the PMGH team</h2>
+            <p>
+              We welcome applications from committed health professionals and support staff who wish
+              to contribute to better health for people across Papua New Guinea.
+            </p>
+          </div>
+        </div>
+
+        <h2>Before you apply</h2>
+        <ul class="styled-list">
+          <li>Check the official vacancy advertisement for position details and closing date.</li>
+          <li>Prepare your CV and supporting documents (qualifications, registrations, referees).</li>
+          <li>Make sure your contact details are correct so we can reach you.</li>
+        </ul>
+        <p class="news-meta">
+          Note: This online form sends your details to the PMGH Human Resources email address.
+          Please ensure the HR email is current if you maintain this site.
+        </p>
+      </div>
+
+      <!-- APPLICATION FORM -->
+      <article class="card">
+        <h2>Job application form</h2>
+        <p>This form is for general applications to advertised PMGH positions.</p>
+
+        <!--
+          IMPORTANT:
+          Replace hr@pomgen.gov.pg with the current HR email address if it changes.
+        -->
+        <form
+          class="contact-form"
+          action="https://formsubmit.co/hr@pomgen.gov.pg"
+          method="POST"
+        >
+          <!-- FormSubmit settings -->
+          <input type="hidden" name="_subject" value="New job application from PMGH website">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="false">
+
+          <label>
+            Full name
+            <input type="text" name="name" required>
+          </label>
+
+          <label>
+            Email
+            <input type="email" name="email" required>
+          </label>
+
+          <label>
+            Phone number
+            <input type="tel" name="phone" required>
+          </label>
+
+          <label>
+            Position you are applying for
+            <input type="text" name="position" placeholder="e.g. Registered Nurse – General Wards" required>
+          </label>
+
+          <label>
+            Department / area of interest
+            <input type="text" name="department" placeholder="e.g. Nursing, Emergency, Pathology">
+          </label>
+
+          <label>
+            Brief cover message
+            <textarea name="message" rows="5" placeholder="Introduce yourself and summarise your experience." required></textarea>
+          </label>
+
+          <label>
+            Link to CV / supporting documents (optional)
+            <input type="url" name="cv_link" placeholder="Paste an online link to your CV or documents if available">
+          </label>
+
+          <button type="submit" class="btn primary">Submit application</button>
+
+        </form>
+
+        <p class="contact-warning">
+          After you submit, you may receive a confirmation email from FormSubmit asking you to verify
+          this email address the first time it is used.
+        </p>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-col">
+      <h4>Port Moresby General Hospital</h4>
+      <p>Korobosea, Port Moresby, NCD<br>Papua New Guinea</p>
+      <p>Phone: +675 324 8200</p>
+    </div>
+    <div class="footer-col">
+      <h4>Patients & visitors</h4>
+      <ul>
+        <li><a href="contact.html">Maps &amp; directions</a></li>
+        <li><a href="contact.html">Visiting information</a></li>
+        <li><a href="contact.html">Parking &amp; transport</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="#">Facebook (placeholder)</a></li>
+        <li><a href="contact.html">Email us</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>© <span id="year"></span> Port Moresby General Hospital. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
