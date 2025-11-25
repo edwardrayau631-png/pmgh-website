@@ -4,7 +4,7 @@ if (yearSpan) {
   yearSpan.textContent = new Date().getFullYear();
 }
 
-// Add subtle shadow on scroll for header
+// Header shadow on scroll
 const header = document.querySelector('.site-header');
 if (header) {
   window.addEventListener('scroll', () => {
