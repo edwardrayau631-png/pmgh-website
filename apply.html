@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Apply for a role – Port Moresby General Hospital</title>
+  <title>Apply Online | Careers at PMGH</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -32,114 +32,113 @@
   </div>
 </header>
 
+<!-- HERO -->
 <section class="page-hero">
   <div class="container">
-    <h1>Apply for a role at PMGH</h1>
-    <p>Submit your details for advertised positions at Port Moresby General Hospital.</p>
+    <h1>Apply Online</h1>
+    <p>Submit your application to join the PMGH team.</p>
   </div>
 </section>
 
+<!-- BREADCRUMB -->
 <nav class="breadcrumbs">
   <div class="container">
     <a href="index.html">Home</a> ›
     <a href="careers.html">Careers</a> ›
-    <span>Apply online</span>
+    <span>Apply Online</span>
   </div>
 </nav>
 
 <main>
-  <section class="section">
-    <div class="container contact-layout">
+<section class="section">
+  <div class="container page-layout">
 
-      <div>
-        <div class="careers-photo-banner">
-          <img src="pmgh-departments.jpg" alt="Staff at Port Moresby General Hospital">
-          <div class="careers-photo-caption">
-            <h2>Join the PMGH team</h2>
-            <p>
-              We welcome applications from committed health professionals and support staff who wish
-              to contribute to better health for people across Papua New Guinea.
-            </p>
-          </div>
+    <!-- SIDEBAR -->
+    <aside class="side-nav">
+      <h3>Careers</h3>
+      <ul>
+        <li><a href="careers.html">Overview</a></li>
+        <li><a href="apply.html" class="active">Apply online</a></li>
+      </ul>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <article class="page-content">
+
+      <!-- PHOTO BANNER -->
+      <div class="careers-photo-banner">
+        <img src="pmgh-services.jpg" alt="PMGH Careers">
+        <div class="careers-photo-caption">
+          <h2>Join Port Moresby General Hospital</h2>
+          <p>We welcome motivated and dedicated professionals to be part of our team.</p>
         </div>
+      </div>
 
-        <h2>Before you apply</h2>
-        <ul class="styled-list">
-          <li>Check the official vacancy advertisement for position details and closing date.</li>
-          <li>Prepare your CV and supporting documents (qualifications, registrations, referees).</li>
-          <li>Make sure your contact details are correct so we can reach you.</li>
-        </ul>
-        <p class="news-meta">
-          Note: This online form sends your details to the PMGH Human Resources email address.
-          Please ensure the HR email is current if you maintain this site.
-        </p>
+      <h2>Job Application Form</h2>
+      <p>Please complete the form below to submit your application.</p>
+
+      <!-- SUCCESS MESSAGE (hidden by default) -->
+      <div id="successMessage" class="success-message" style="display:none;">
+        <h3>Your application has been submitted.</h3>
+        <p>Thank you for applying. The PMGH HR team will review your submission.</p>
       </div>
 
       <!-- APPLICATION FORM -->
-      <article class="card">
-        <h2>Job application form</h2>
-        <p>This form is for general applications to advertised PMGH positions.</p>
+      <form id="applicationForm"
+            action="https://formsubmit.co/careers@pomgen.gov.pg"
+            method="POST"
+            enctype="multipart/form-data"
+            class="contact-form career-form">
 
-        <!--
-          IMPORTANT:
-          Replace hr@pomgen.gov.pg with the current HR email address if it changes.
-        -->
-        <form
-          class="contact-form"
-          action="https://formsubmit.co/hr@pomgen.gov.pg"
-          method="POST"
-        >
-          <!-- FormSubmit settings -->
-          <input type="hidden" name="_subject" value="New job application from PMGH website">
-          <input type="hidden" name="_template" value="table">
-          <input type="hidden" name="_captcha" value="false">
+        <!-- FormSubmit settings -->
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_subject" value="New PMGH Job Application">
+        <input type="hidden" name="_next" value="https://edwardrayau631-png.github.io/pmgh-website/apply.html?submitted=true">
 
-          <label>
-            Full name
-            <input type="text" name="name" required>
-          </label>
+        <label>
+          Full name
+          <input type="text" name="Full Name" placeholder="Your full name" required>
+        </label>
 
-          <label>
-            Email
-            <input type="email" name="email" required>
-          </label>
+        <label>
+          Email address
+          <input type="email" name="Email" placeholder="you@example.com" required>
+        </label>
 
-          <label>
-            Phone number
-            <input type="tel" name="phone" required>
-          </label>
+        <label>
+          Phone number
+          <input type="text" name="Phone" placeholder="Your contact number" required>
+        </label>
 
-          <label>
-            Position you are applying for
-            <input type="text" name="position" placeholder="e.g. Registered Nurse – General Wards" required>
-          </label>
+        <label>
+          Position applying for
+          <select name="Position Applied For" required>
+            <option value="">Select a position…</option>
+            <option value="Registered Nurse – General Wards">Registered Nurse – General Wards</option>
+            <option value="Medical Officer – Emergency Department">Medical Officer – Emergency Department</option>
+            <option value="Laboratory Scientist – Pathology">Laboratory Scientist – Pathology</option>
+            <option value="Security Officer – Hospital Services">Security Officer – Hospital Services</option>
+            <option value="Other">Other (specify in message)</option>
+          </select>
+        </label>
 
-          <label>
-            Department / area of interest
-            <input type="text" name="department" placeholder="e.g. Nursing, Emergency, Pathology">
-          </label>
+        <label>
+          Upload your CV/Resume (PDF or Word)
+          <input type="file" name="Resume" accept=".pdf,.doc,.docx" required>
+        </label>
 
-          <label>
-            Brief cover message
-            <textarea name="message" rows="5" placeholder="Introduce yourself and summarise your experience." required></textarea>
-          </label>
+        <label>
+          Cover letter / Message
+          <textarea name="Message" rows="5" placeholder="Write a short message…"></textarea>
+        </label>
 
-          <label>
-            Link to CV / supporting documents (optional)
-            <input type="url" name="cv_link" placeholder="Paste an online link to your CV or documents if available">
-          </label>
+        <button type="submit" class="btn primary">Submit Application</button>
+      </form>
 
-          <button type="submit" class="btn primary">Submit application</button>
-
-        </form>
-
-        <p class="contact-warning">
-          After you submit, you may receive a confirmation email from FormSubmit asking you to verify
-          this email address the first time it is used.
-        </p>
-      </article>
-    </div>
-  </section>
+    </article>
+  </div>
+</section>
 </main>
 
 <footer class="site-footer">
@@ -149,21 +148,6 @@
       <p>Korobosea, Port Moresby, NCD<br>Papua New Guinea</p>
       <p>Phone: +675 324 8200</p>
     </div>
-    <div class="footer-col">
-      <h4>Patients & visitors</h4>
-      <ul>
-        <li><a href="contact.html">Maps &amp; directions</a></li>
-        <li><a href="contact.html">Visiting information</a></li>
-        <li><a href="contact.html">Parking &amp; transport</a></li>
-      </ul>
-    </div>
-    <div class="footer-col">
-      <h4>Connect</h4>
-      <ul>
-        <li><a href="#">Facebook (placeholder)</a></li>
-        <li><a href="contact.html">Email us</a></li>
-      </ul>
-    </div>
   </div>
   <div class="footer-bottom">
     <div class="container">
@@ -171,6 +155,14 @@
     </div>
   </div>
 </footer>
+
+<script>
+// Show success message when redirected with ?submitted=true
+const urlParams = new URLSearchParams(window.location.search);
+if (urlParams.get('submitted') === 'true') {
+  document.getElementById('successMessage').style.display = 'block';
+}
+</script>
 
 <script src="script.js"></script>
 </body>
