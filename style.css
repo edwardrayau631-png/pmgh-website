@@ -797,3 +797,74 @@ img {
     flex-direction: column;
   }
 }
+
+/* RBWH STYLE HERO */
+.hero-rbwh {
+  position: relative;
+  padding: 80px 0;
+  overflow: hidden;
+  background: linear-gradient(135deg, #003366, #007ba7);
+  color: #fff;
+}
+
+.hero-rbwh-bg {
+  position: absolute;
+  inset: 0;
+  background: url('pmgh-pattern.png') no-repeat right center;
+  opacity: 0.25;
+  pointer-events: none;
+}
+
+.hero-rbwh-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  position: relative;
+  z-index: 5;
+}
+
+.hero-rbwh-left {
+  flex: 1.2;
+}
+
+.hero-rbwh-title-box {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.35);
+  padding: 12px 25px;
+  border-left: 6px solid #ffcc00; /* Gold line like RBWH */
+  margin-bottom: 10px;
+  backdrop-filter: blur(3px);
+}
+
+.hero-rbwh-title-box h1 {
+  font-size: 2.2rem;
+  margin: 0;
+  color: #fff;
+}
+
+.hero-rbwh-subtitle {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+.hero-rbwh-right {
+  flex: 1;
+  position: relative;
+}
+
+.hero-rbwh-image {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.hero-rbwh-overlay {
+  position: absolute;
+  right: -40px;
+  top: 0;
+  width: 220px;
+  opacity: 0.9;
+  pointer-events: none;
+}
