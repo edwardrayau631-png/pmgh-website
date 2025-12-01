@@ -798,73 +798,96 @@ img {
   }
 }
 
-/* RBWH STYLE HERO */
+/* ===============================
+   RBWH-STYLE HERO (PMGH Version)
+   =============================== */
+
 .hero-rbwh {
   position: relative;
-  padding: 80px 0;
+  background: linear-gradient(90deg, #004b78 0%, #006a9c 100%);
+  color: white;
+  padding: 70px 0 90px;
   overflow: hidden;
-  background: linear-gradient(135deg, #003366, #007ba7);
-  color: #fff;
 }
 
-.hero-rbwh-bg {
+/* Overlay pattern (your PMGH graphic) */
+.hero-rbwh .hero-overlay {
   position: absolute;
-  inset: 0;
-  background: url('pmgh-pattern.png') no-repeat right center;
+  right: 0;
+  bottom: 0;
+  width: 55%;
+  height: 100%;
+  background-image: url('pmgh-hero-banner.png'); /* YOUR new pattern */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center right;
   opacity: 0.25;
   pointer-events: none;
 }
 
-.hero-rbwh-inner {
+.hero-content {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 40px;
+  justify-content: space-between;
   position: relative;
-  z-index: 5;
+  z-index: 10;
 }
 
-.hero-rbwh-left {
-  flex: 1.2;
+.hero-left {
+  width: 50%;
 }
 
-.hero-rbwh-title-box {
-  display: inline-block;
-  background: rgba(0, 0, 0, 0.35);
-  padding: 12px 25px;
-  border-left: 6px solid #ffcc00; /* Gold line like RBWH */
+.hero-label {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  opacity: 0.8;
   margin-bottom: 10px;
-  backdrop-filter: blur(3px);
 }
 
-.hero-rbwh-title-box h1 {
-  font-size: 2.2rem;
-  margin: 0;
+.hero-rbwh h1 {
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero-desc {
+  font-size: 17px;
+  line-height: 1.6;
+  opacity: 0.95;
+  max-width: 550px;
+  margin-bottom: 25px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.btn.primary {
+  background: #0074cc;
   color: #fff;
+  padding: 12px 22px;
+  border-radius: 6px;
 }
 
-.hero-rbwh-subtitle {
-  font-size: 1.2rem;
-  margin-top: 10px;
-  line-height: 1.5;
+.btn.ghost {
+  border: 2px solid white;
+  padding: 10px 22px;
+  color: white;
+  border-radius: 6px;
 }
 
-.hero-rbwh-right {
-  flex: 1;
-  position: relative;
+/* Right Image */
+.hero-right {
+  width: 45%;
+  text-align: right;
 }
 
-.hero-rbwh-image {
-  width: 100%;
+.hero-image {
+  width: 420px;
+  height: auto;
   border-radius: 10px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-}
-
-.hero-rbwh-overlay {
-  position: absolute;
-  right: -40px;
-  top: 0;
-  width: 220px;
-  opacity: 0.9;
-  pointer-events: none;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.25);
 }
