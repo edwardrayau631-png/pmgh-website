@@ -917,3 +917,14 @@ img {
   }
 }
 
+/* HERO-SPECIFIC BUTTON OVERRIDES */
+.hero-rbwh .btn.ghost {
+  border: 2px solid #ffffff !important;
+  color: #ffffff !important;
+  background: transparent !important;
+}
+
+.hero-rbwh .btn.ghost:hover {
+  background: rgba(255, 255, 255, 0.18) !important;
+  color: #ffffff !important;
+}
