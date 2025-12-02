@@ -961,3 +961,51 @@ img {
   position: relative;
   z-index: 2;
 }
+
+/* ===========================================
+   MOBILE — HOME TILES
+   =========================================== */
+@media (max-width: 768px) {
+  .home-tiles-inner {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .home-tile {
+    padding: 1rem;
+  }
+}
+
+/* ===========================================
+   MOBILE — NEWS GRID
+   =========================================== */
+@media (max-width: 768px) {
+  .home-news-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .home-news-feature {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+
+  .home-news-feature img {
+    height: 180px;
+    object-fit: cover;
+  }
+}
+
+/* ===========================================
+   MOBILE — FOOTER
+   =========================================== */
+@media (max-width: 768px) {
+  .footer-inner {
+    grid-template-columns: 1fr;
+    gap: 1.3rem;
+  }
+
+  .site-footer {
+    padding: 2rem 0 1rem;
+  }
+}
